@@ -4,7 +4,7 @@
 # получения n-го члена прогрессии: an = a1 + (n-1) * d.
 # Каждое число вводится с новой строки.
 
-def result(a, d, n):
+def arithmetic_sequence(a, d, n):
     lst = []
     for i in range(n): 
         lst.append(a + d * i)
@@ -14,4 +14,4 @@ a = int(input('Введите первый элемент арифметичес
 d = int(input('Введите разность её элементов: '))
 n = int(input('Введите количество её элементов: '))
 
-print(*(result(a, d, n)))
+print(*(arithmetic_sequence(a, d, n)))
